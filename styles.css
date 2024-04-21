@@ -1,3 +1,5 @@
+/* Existing CSS */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #A6C6F5;
@@ -69,4 +71,55 @@ h2 {
 p {
     font-size: 1.2em;
     line-height: 1.5;
+}
+
+/* CSS for Portrait Image */
+.center {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Ensure the image does not exceed its original size */
+    height: auto;
+    border-radius: 50%; /* Apply border radius to make it round */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS for Hobby Images and Text Boxes */
+.hobby-container {
+    clear: both; /* Clear the float to prevent overlapping */
+    margin-bottom: 20px; /* Add space between hobby containers */
+}
+
+.hobby-content {
+    overflow: hidden; /* Clear the float inside the hobby-content */
+}
+
+.hobby-image {
+    max-width: 200px; /* Set a max-width for the images */
+    height: auto;
+    display: inline-block; /* Change to inline-block */
+    vertical-align: top; /* Align to the top */
+    margin-right: 20px; /* Add some space to the right of the images */
+}
+
+.image-wrapper {
+    border: 1px solid #ccc; /* Add a border around the image */
+}
+
+.hobby-description {
+    display: inline-block; /* Change to inline-block */
+    vertical-align: top; /* Align to the top */
+    width: calc(100% - 240px); /* Set the width of the description box (total width minus image width and margin) */
+    margin-top: 0; /* Remove margin from the top of the description box */
+}
+
+/* CSS for Hobby Titles and Other Titles */
+h3, h2, h1 {
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+p.short-bio {
+	max-width: 600px;
+	margin: 0 auto;
 }
