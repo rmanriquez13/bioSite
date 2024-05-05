@@ -166,7 +166,20 @@ p.short-bio {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
 .bio-text {
-    margin-top: 20px;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+}
+
+.space-image {
+    flex-shrink: 0; /* Prevent image from shrinking */
+    margin-right: 20px; /* Add some space to the right of the image */
+    max-width: 200px; /* Set a max-width for the image */
+    max-height: 300px; /* Set a max-height for the image */
+    border-radius: 5px; /* Apply border radius to make it round */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.short-bio {
+    flex: 1; /* Allow text to grow and take remaining space */
 }
